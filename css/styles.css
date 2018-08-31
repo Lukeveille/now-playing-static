@@ -195,3 +195,84 @@ figure {
 .about > p {
   margin: 0;
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: 71px auto;
+    padding-bottom: 0;
+  }
+  .movie-overview {
+    display: block;
+  }
+  .site-header {
+    padding-left: inherit;
+    width: 70px;
+  }
+  .site-nav {
+    bottom: auto;
+    width: auto;
+    right: auto;
+    margin-top: 90px;
+  }
+  .site-nav-list {
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 100%;
+  }
+  .site-nav-item {
+    display: list-item;
+    float: none;
+    text-align: center;
+    width: auto;
+  }
+  .site-logo {
+    z-index: 10;
+    width: 60px;
+    left: .4rem;
+  }
+  .site-footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-nav {
+    background-color: #333333;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1154px;
+  }
+
+
+  .movie-overview {
+    display: none;
+  }
+  .movie-backdrop {
+    display: none;
+  }
+  .movie-poster {
+    display: block;
+  }
+
+
+  .movie:first-child .movie-overview {
+    display: block;
+  }
+  .movie:first-child .movie-backdrop {
+    display: block;
+  }
+  .movie:first-child .movie-poster {
+    display: none;
+  }
+  .movie:first-child {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
