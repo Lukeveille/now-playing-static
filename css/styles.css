@@ -263,6 +263,9 @@ figure {
   .movie-poster {
     display: block;
   }
+  .site-header {
+    overflow: hidden;
+  }
 
 
   .movie:first-child .movie-overview {
