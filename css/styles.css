@@ -62,8 +62,8 @@ figure {
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 100;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .site-nav-list,
@@ -206,7 +206,6 @@ figure {
     display: block;
   }
   .site-header {
-    padding-left: inherit;
     width: 70px;
   }
   .site-nav {
@@ -263,10 +262,6 @@ figure {
   .movie-poster {
     display: block;
   }
-  .site-header {
-    overflow: hidden;
-  }
-
 
   .movie:first-child .movie-overview {
     display: block;
